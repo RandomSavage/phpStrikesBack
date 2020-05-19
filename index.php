@@ -1,12 +1,5 @@
 <?php
-
-
 $name = 'Random';
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +10,6 @@ $name = 'Random';
     <title></title>
   </head>
   <body>
-      <?php echo "<h1>What {$name}</h1>" ?> 
+      <?php echo "<h1>What {$name}</h1>" ?>
   </body>
 </html>
