@@ -1,5 +1,5 @@
 <?php
-$name = 'Random';
+$juice = 'You like the money';
 require('./includes/topScripts.php');
 ?>
 
@@ -12,7 +12,12 @@ require('./includes/topScripts.php');
       <?php include('includes/header.php') ?>
       <section>
         <h1>Home</h1>
-          <?php echo "<h1>What {$name}</h1>" ?>
+          <?php echo "<h1>$juice</h1>" ?>
+          <div class="img-container">
+            <div class="img">
+
+            </div>
+          </div>
       </section>
 
     </div>
