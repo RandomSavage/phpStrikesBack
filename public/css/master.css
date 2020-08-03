@@ -9,7 +9,7 @@ body{
 .container-background{
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 .page-background{
@@ -45,6 +45,7 @@ body{
   background: #F8F7FC;
   border-radius: 10px;
   overflow: hidden;
+
 }
 .container .navigation{
   background-color: #0cbaba;
@@ -196,7 +197,7 @@ body{
 .content-area .container-about p{
   color: #3F3F65;
   font-size: 1.2rem;
-  line-height: 2;
+  line-height: 1.5;
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -230,4 +231,22 @@ body{
   display: block;
   font-size: 1.5rem;
   padding: 10px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vh;
+    height: 100vh;
+    background: #F8F7FC;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  .container .navigation{
+    display: none;
+  }
+  .container .user-profile{
+    padding-bottom: 20px;
+  }
 }

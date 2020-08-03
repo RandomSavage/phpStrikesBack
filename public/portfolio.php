@@ -67,7 +67,7 @@ require('./includes/topScripts.php');
             </div>
             <div class="container-about">
               <h2>About Me</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation..</p>
+              <p>I am looking for a job applying what I have learned and continue to develop those skills in the real world. I really would like to get an opportunity to work on a team. Internships, work-shadowing programs, Part-Time on my days off, Free Lancing, I will put it all on the table.</p>
             </div>
             <div class="social-media">
               <div class="social">
