@@ -19,7 +19,7 @@ require('./includes/topScripts.php');
       <div class="page-background"></div>
       <div class="center-site">
         <div class="container">
-          <nav class="navigation">
+          <nav class="navigation active">
             <ul>
               <li><a href="/" class="<?php echo ($location == '/') ? 'active' : ''; ?>"><span class="ti-home"></span></a></li>
               <li><a href="about.php" class="<?php echo ($location == '/about.php') ? 'active' : ''; ?>"><span class="ti-user"></a></li>
@@ -31,7 +31,11 @@ require('./includes/topScripts.php');
           <div class="user-profile">
             <div class="name">
               Random Savage
+              <div class="menu-btn" onclick="myFunction()">
+                <span class="ti-layout-grid3">
+              </div>
             </div>
+
             <div class="border-img">
               <div class="user-img"></div>
             </div>
@@ -102,5 +106,6 @@ require('./includes/topScripts.php');
         </div>
       </div>
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>

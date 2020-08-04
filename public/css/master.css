@@ -45,7 +45,6 @@ body{
   background: #F8F7FC;
   border-radius: 10px;
   overflow: hidden;
-
 }
 .container .navigation{
   background-color: #0cbaba;
@@ -93,6 +92,13 @@ body{
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.container .user-profile .name .menu-btn{
+  padding-left: 35px;
+  display: none;
 }
 .user-profile .border-img{
   display: flex;
@@ -245,8 +251,42 @@ body{
   }
   .container .navigation{
     display: none;
+    height: 100vh;
+    width: 33%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    transform: translate3d(-100%,0,0);
+  }
+  .container .navigation.active{
+    height: 100vh;
+    width: 33%;
+    transform: translate3d(0,0,0);
+
   }
   .container .user-profile{
     padding-bottom: 20px;
+  }
+  .container .navigation ul li{
+    padding: 21px 46px;
+    overflow: auto;
+  }
+  .container .navigation ul li span{
+    font-size: 2.5rem;
+  }
+  .container .user-profile .name{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .container .user-profile .name .menu-btn{
+    padding-left: 35px;
+    display: flex;
   }
 }
