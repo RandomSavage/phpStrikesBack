@@ -71,7 +71,7 @@ require('./includes/topScripts.php');
             </div>
             <div class="container-about">
               <h2>About Me</h2>
-              <p>I am looking for a job applying what I have learned and continue to develop those skills in the real world. I really would like to get an opportunity to work on a team. Internships, work-shadowing programs, Part-Time on my days off, Free Lancing, I will put it all on the table.</p>
+              <p>I work in a warehouse. I live in a remote area. I travel nearly two hours everyday to work. I have two school aged children. I want a job programming. One where I can work a few days at an office with awesome developers and designers. Possibly some days work remotely. </p>
             </div>
             <div class="social-media">
               <div class="social">
