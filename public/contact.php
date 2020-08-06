@@ -1,6 +1,7 @@
 <?php
 $name = 'Random';
 require('./includes/topScripts.php');
+include './includes/autoloader.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,11 @@ require('./includes/topScripts.php');
       <?php include('includes/header.php') ?>
       <section>
         <h1>Contact</h1>
-          <?php echo "<h1>What {$name}</h1>" ?>
+          <?php
+            $x = new Orders('Hello');
+            echo $x->get_greet();
+            echo "<br>";
+           ?>
       </section>
 
     </div>
