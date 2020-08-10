@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
-include 'includes/autoLoader.php';
-
+// include 'includes/autoloader.php';
+ if(isset($_POST['submit'])) include('includes/calc.inc.php');
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -11,10 +11,10 @@ include 'includes/autoLoader.php';
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <form class="" action="includes/calculator.php" method="post">
+    <form class="" action="calculator.php" method="post">
       <p>Php Calculator, Hooray!</p>
       <input type="number" name="num1" value="" placeholder="First Number">
-        <select class="" name="operand">
+        <select class="" name="oper">
           <option value="add">Addition</option>
           <option value="subtract">Subtraction</option>
           <option value="div">Division</option>

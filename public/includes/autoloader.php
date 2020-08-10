@@ -1,27 +1,26 @@
 <?php
 
-
 // this is for autoloading classes when an object is instantiated in a file
 spl_autoload_register('myAutoLoader');
 
+// set_include_path('.;C:\php\pear');
 function myAutoLoader($className) {
-  $path = "../classes/";
+  $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+  // ini_set('include_path', 'C:\php\pear');
+  if (strpos($url, 'includes') !== false) {
+    echo $url . " hello";
+    $path = '../classes/';
+  } else {
+    $path = 'classes/';
+  }
   $extension = ".class.php";
   $fullPath = $path . $className . $extension;
-  echo '<pre>';
-  echo $path;
+  // set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+echo $_SERVER['HTTP_HOST'];
+echo getcwd();
+  include_once strtolower($fullPath);
+  
   echo '<br>';
-  echo $className;
-  echo '<br>';
-  echo $extension;
-  echo '</pre>';
-  echo '<br>';
-//returns a much cleaner error message if an error is created when instantiating an object
-  if(!file_exists($fullPath)){
-    return false;
-  }
 
-
-  include_once $fullPath;
 }
 ?>
